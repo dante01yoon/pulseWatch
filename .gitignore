@@ -1,2 +1,36 @@
-.cursorrules
-.memory
+# Cursor Rules
+.cursorrules/
+.memory/
+
+# Cursor Memory
+.cursor/
+.cursor-memory/
+
+# Binaries
+bin/
+tmp/
+main
+
+# OS Specific
+.DS_Store
+.idea/
+.vscode/
+
+# Env
+.env
+.env.local
+
+# Go
+vendor/
+coverage.txt
+
+# Node / Frontend
+node_modules/
+.next/
+out/
+
+# Logs
+*.log
+
+# Memory Bank (Optional: keep checked in if you want to share with team, ignore if personal)
+# We keep it checked in for this project as it is the source of truth.
