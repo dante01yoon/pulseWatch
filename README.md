@@ -27,8 +27,8 @@ PulseWatch is a mini SRE platform designed to check the availability of multiple
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/pulse-watch.git
-   cd pulse-watch
+   git clone https://github.com/yourusername/pulseWatch.git
+   cd pulseWatch
    ```
 
 2. **Environment Setup**
