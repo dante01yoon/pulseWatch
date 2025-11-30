@@ -1,6 +1,6 @@
 DB_URL=postgresql://postgres:postgres@localhost:5432/pulsewatch?sslmode=disable
 
-.PHONY: network postgres createdb dropdb migrateup migratedown sqlc test server mock dev-up dev-down frontend
+.PHONY: network postgres createdb dropdb migrateup migratedown sqlc test server mock dev-up dev-down frontend init
 
 network:
 	docker network create pulse-network || true
@@ -43,3 +43,8 @@ dev-down:
 
 frontend:
 	cd frontend && npm run dev
+
+init: dev-up
+	sleep 3
+	make createdb || true
+	make migrateup
